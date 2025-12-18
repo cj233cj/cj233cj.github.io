@@ -10,7 +10,7 @@ DEFAULT_LANG = 'en'
 
 
 PATH = 'content'
-THEME = 'themes/Papyrus'
+THEME = 'themes/papyrus'
 THEME_STATIC_PATHS = ['static']
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['readtime', 'neighbors']
