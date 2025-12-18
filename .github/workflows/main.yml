@@ -37,7 +37,7 @@ jobs:
         run: uv sync
 
       - name: Build Pelican site
-        run: uv run pelican content -s publishconf.py
+        run: uv run pelican content 
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
