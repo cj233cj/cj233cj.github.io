@@ -1,14 +1,18 @@
-AUTHOR = 'hugu'
-SITENAME = 'digtalsheep'
-SITEURL = 'https://cj233cj.github.io/'
-SITETITLE = "project digtalsheep"
-SITEDESCRIPTION = "the dream"
-SITELOGO = SITEURL + "/images/profile.jpg"
+AUTHOR = "hugu"
+SITEURL = "https://cj233cj.github.io/"
+SITENAME = "Project Digitalsheep"
+SITETITLE = "Project Digitalsheep"
+SITESUBTITLE = "heh heh"
+SITEDESCRIPTION = "heh heh heh"
+SITELOGO = SITEURL + "/images/logo.jpg"
 FAVICON = SITEURL + "/images/favicon.ico"
 TIMEZONE = 'Asia/Shanghai'
 DEFAULT_LANG = 'en'
 
+SUBTITLE = "Project Digitalsheep"
+SUBTEXT = '''heh heh heh heh'''
 
+COPYRIGHT = '©'
 PATH = 'content'
 THEME = 'themes/papyrus'
 THEME_STATIC_PATHS = ['static']
@@ -17,8 +21,7 @@ PLUGINS = ['readtime', 'neighbors']
 #PLUGINS = ['readtime', 'search', 'neighbors', 'pelican-toc']
 
 DISPLAY_PAGES_ON_MENU = True
-DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives',))
-#DIRECT_TEMPLATES = (('index', 'search', 'tags', 'categories', 'archives',))
+DIRECT_TEMPLATES = (('index', 'search', 'tags', 'categories', 'archives',))
 PAGINATED_TEMPLATES = {'index':None,'tag':None,'category':None,'author':None,'archives':24,}
 
 # Site search plugin
@@ -45,17 +48,19 @@ RSS_FEED_SUMMARY_ONLY = True
 
 # Social widgets
 SOCIAL = (
-    ('github', ''),
-    ('twitter', ':)'),
+    ("twitter", "https://twitter.com/intent/tweet/?text=Features&amp;url="),
+   
+    ("mastodon", "https://mastodon.social/home"),
+
+    ("github", " "),
 )
 
 # Article share widgets
 SHARE = (
     ("twitter", "https://twitter.com/intent/tweet/?text=Features&amp;url="),
    
-    ("reddit", "https://reddit.com/submit?url="),
+    ("mastodon", "https://mastodon.social/home"),
 
-    ("telegram", "https://telegram.me/share/url?text=Features&amp;url="),
 )
 
 DEFAULT_PAGINATION = 10
