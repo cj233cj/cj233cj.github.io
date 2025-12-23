@@ -7,7 +7,7 @@ Summary: the forbidden git cmd
 
 
 ---
-the original md text:
+# *the original md text*:
 
 currently i am using [stash](https://stashapp.cc) to manage my pornography collections.
 
@@ -23,22 +23,22 @@ there are some quirky shit in this wonderful horny FOSS app, and here are some t
 anyway, the ladies now have names thanks to nyaa github aria2 python etc etc 
 
 ---
-the prompt:
+# the *prompt*:
 `you are a assitant for writting and editing blog articles in english, check the grammar and spelling, and put more details in sentences, make it more fluent and cohesive, i will send the aritles in ""`
 
 ---
-*the answer from deepseek*:
+# *the answer from deepseek*:
 
 nothing, it fucking killed itself after generating something maybe because "GFW" or "proxy" is mentioned in the aritcle
 
 
 ---
-*the claude version*:
+# *the claude version*:
 
 
 Currently, I'm using [Stash](https://stashapp.cc) to manage my adult content collection. While this open-source application is wonderfully feature-rich for organizing adult media, I've encountered several quirks and limitations that required some workarounds.
 
-## Connection and Database Issues
+### Connection and Database Issues
 
 **Connectivity Problems with JAV Databases**  
 One significant challenge is the unstable connection to many Japanese Adult Video (JAV) database sites when accessing Stash from behind the Great Firewall. The only solution I've found is to manually configure a local proxy in the `config.yml` file, which isn't the most user-friendly approach but gets the job done.
@@ -49,7 +49,7 @@ Unlike some other media management tools, Stash doesn't automatically create per
 **Limited Anime Database Support**  
 The anime-related database integration appears to be lacking or incomplete. This is particularly noticeable if your collection includes animated adult content, as metadata retrieval and organization options seem limited in this category.
 
-## Technical Glitches
+### Technical Glitches
 
 **DLNA Functionality**  
 DLNA streaming isn't working properly on my Windows PC. I'm not sure if this is a configuration issue on my end or a broader compatibility problem, but it's something I plan to investigate further.
@@ -60,13 +60,13 @@ The video player experience isn't always consistent, especially when attempting 
 **Viewing History Tracking**  
 I'm uncertain whether the watch history feature is functioning correctly. It seems like my viewing records aren't being fully captured or stored consistently—though I'm still determining if this is a bug or a misunderstanding of how the feature works.
 
-## The Silver Lining
+### The Silver Lining
 
 Despite these challenges, I've successfully organized my collection and properly tagged all performers. This achievement was made possible through a combination of tools and resources, including Nyaa, GitHub repositories, aria2 for downloading, Python scripts for automation, and various other utilities. Now my collection is properly cataloged, and all the performers have their names correctly assigned.
 
 
 ---
-*the chatGPT version:*
+# *the chatGPT version:*
 
 
 Currently, I am using **[Stash](https://stashapp.cc)** to manage my personal pornography collection.
@@ -91,7 +91,7 @@ Despite its rough edges, Stash remains a powerful and flexible solution, especia
 
 
 ---
-*the human comment:*
+# *the human comment:*
 
 they definitely write better than the human, unfortunately they can not keep the humourus tone in a humanoid way
 
