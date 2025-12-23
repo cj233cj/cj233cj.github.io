@@ -41,3 +41,11 @@ The site automatically deploys to GitHub Pages via GitHub Actions on every push 
 ## Caveat
 
 This blog is mostly AI slop and for fun currently
+
+## Todo
+
+- [ ]  google analysis or something 
+- [ ]  hehe
+- [ ]  music player 
+- [ ]  cjk fonts and de-google
+- [ ]  ...

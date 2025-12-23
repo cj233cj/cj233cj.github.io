@@ -16,19 +16,19 @@
   </h1>
 
   <!-- Google site search form: results open in a new tab -->
-  <form action="https://www.google.com/search" method="get" target="_blank" class="stork-wrapper">
-    <!-- Replace example.com with your domain (or leave empty to search the whole web) -->
-    <input type="hidden" name="q" id="gsite-query" value="">
-    <input type="hidden" name="sitesearch" value="cj233cj.github.io">
+  <form action="https://www.google.com/search" method="get" target="_blank" class="stork-wrapper"
+        onsubmit="if(!document.getElementById('gsite-input').value.trim()){return false;}">
+    <!-- visible input is sent as q -->
+    <input name="q"
+           id="gsite-input"
+           class="font-semibold h-10 w-full border-2 border-zinc-500 bg-zinc-100 dark:bg-zinc-800 placeholder-zinc-400 dark:placeholder-zinc-300 focus:border-zinc-500 focus:outline-none rounded-lg pl-4"
+           placeholder=" Search ↵"
+           aria-label="search"
+           autocomplete="off"
+           type="search">
 
-    <input
-      class="font-semibold h-10 w-full border-2 border-zinc-500 bg-zinc-100 dark:bg-zinc-800 placeholder-zinc-400 dark:placeholder-zinc-300 focus:border-zinc-500 focus:outline-none rounded-lg pl-4"
-      id="gsite-input"
-      placeholder=" Search ↵"
-      aria-label="search"
-      autocomplete="off"
-      type="search"
-    >
+    <!-- keep sitesearch to limit results to your site -->
+    <input type="hidden" name="sitesearch" value="cj233cj.github.io">
 
     <div class="mt-2">
       <button type="submit"
@@ -40,34 +40,14 @@
 </div>
 
 <script>
-  // Put search terms into the q parameter as "term site:example.com"
   (function(){
     const input = document.getElementById('gsite-input');
-    const hidden = document.getElementById('gsite-query');
     const clearBtn = document.getElementById('gsite-clear');
-
-    function sync() {
-      const term = input.value.trim();
-      const site = 'cj233cj.github.io'; // change to your domain or set to '' to search web
-      hidden.value = term ? term + (site ? ' site:' + site : '') : '';
-    }
-
-    input.addEventListener('input', sync);
-    input.addEventListener('keydown', function(e){
-      if (e.key === 'Enter') {
-        sync();
-        // allow form submit to open new tab
-      }
-    });
 
     clearBtn.addEventListener('click', function(){
       input.value = '';
-      sync();
       input.focus();
     });
-
-    // initialize
-    sync();
   })();
 </script>
 
