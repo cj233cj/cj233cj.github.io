@@ -9,7 +9,7 @@ Summary: the forbidden git cmd
 ---
 the original md text:
 
-currently i am using [stash](stashapp.cc) to manage my pornography collections.
+currently i am using [stash](https://stashapp.cc) to manage my pornography collections.
 
 there are some quirky shit in this wonderful horny FOSS app, and here are some tweaks:
 
