@@ -40,7 +40,7 @@ The site automatically deploys to GitHub Pages via GitHub Actions on every push 
 
 ## Caveat
 
-This blog is mostly AI slop and for fun currently
+blog articles may or may not contain some AI slop, currently it's mostly for practice english/japanese writing under the vetting of AI 
 
 ## Todo
 
