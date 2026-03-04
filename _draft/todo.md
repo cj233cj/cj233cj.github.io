@@ -1,0 +1,6 @@
+- selfhost shit
+- the AI work procedure
+- the jp dictionaries and yomitan
+- lazygit lazydocker 
+- vmess protocal time problem maybe
+- anki turmoil
