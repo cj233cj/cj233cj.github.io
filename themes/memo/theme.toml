@@ -1,0 +1,5 @@
+name = "memo"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Minimal memo-first Hugo theme. Dark mode. CJK-ready."
+min_version = "0.110.0"

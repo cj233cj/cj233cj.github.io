@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>the post template · Project Digitalsheep</title>
+
+  <meta name="description" content="short articles and memos" />
+
+  
+  <link rel="canonical" href="http://localhost:1313/posts/my-first-post/" />
+
+  
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+  
+</head>
+<body><nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__title" href="/">Project Digitalsheep</a>
+    <ul class="nav__links">
+      
+      <li>
+        <a href="/posts/"
+           >
+          posts
+        </a>
+      </li>
+      
+      <li>
+        <a href="/archive/"
+           >
+          archive
+        </a>
+      </li>
+      
+      <li>
+        <a href="/about/"
+           >
+          about
+        </a>
+      </li>
+      
+    </ul>
+    <button class="nav__toggle" id="theme-toggle" aria-label="toggle dark mode">○</button>
+  </div>
+</nav>
+
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  var root = document.documentElement;
+  var stored = localStorage.getItem('theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  function update() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    btn.textContent = dark ? '●' : '○';
+  }
+  update();
+  btn.addEventListener('click', function() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    update();
+  });
+})();
+</script>
+<main class="site-main">
+
+<article class="single-post">
+
+  <a class="single-post__back" href="http://localhost:1313/posts">← back</a>
+
+  <header class="single-post__header">
+    <h1 class="single-post__title">
+      
+        the post template
+      
+    </h1>
+    <div class="single-post__meta">
+      <span>hugu</span>
+      <span>2026-05-02</span>
+      
+    </div>
+  </header>
+
+  <div class="post-body">
+    <p>this is the first slop</p>
+
+  </div>
+
+  
+
+</article>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <span>2026</span>
+  </footer>
+
+</body>
+</html>

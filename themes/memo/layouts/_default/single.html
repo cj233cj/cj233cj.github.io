@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<article class="single-post">
+
+  <a class="single-post__back" href="{{ .Site.GetPage "section" "posts" | default "/" | absURL }}">← back</a>
+
+  <header class="single-post__header">
+    <h1 class="single-post__title">
+      {{ if and .Title (ne .Title "#memo") }}
+        {{ .Title }}
+      {{ else }}
+        <span style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-faint);">#memo</span>
+      {{ end }}
+    </h1>
+    <div class="single-post__meta">
+      <span>{{ .Params.author | default .Site.Params.author }}</span>
+      <span>{{ .Date.Format "2006-01-02" }}</span>
+      {{ with .Params.category }}
+        <span>{{ . }}</span>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+
+  {{ if or .Params.tags }}
+  <footer class="single-post__footer">
+    {{ range .Params.tags }}
+      <a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+    {{ end }}
+  </footer>
+  {{ end }}
+
+</article>
+
+{{ end }}

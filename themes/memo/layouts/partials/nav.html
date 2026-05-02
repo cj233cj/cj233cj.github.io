@@ -1,0 +1,37 @@
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    <ul class="nav__links">
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL | relURL }}"
+           {{ if (eq $.RelPermalink (.URL | relURL)) }}class="active"{{ end }}>
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    <button class="nav__toggle" id="theme-toggle" aria-label="toggle dark mode">○</button>
+  </div>
+</nav>
+
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  var root = document.documentElement;
+  var stored = localStorage.getItem('theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  function update() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    btn.textContent = dark ? '●' : '○';
+  }
+  update();
+  btn.addEventListener('click', function() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    update();
+  });
+})();
+</script>

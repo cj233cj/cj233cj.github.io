@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>template: something about &#34;후현대주의 광장무&#34; · Project Digitalsheep</title>
+
+  <meta name="description" content="short articles and memos" />
+
+  
+  <link rel="canonical" href="http://localhost:1313/posts/the-template/" />
+
+  
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+  
+</head>
+<body><nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__title" href="/">Project Digitalsheep</a>
+    <ul class="nav__links">
+      
+      <li>
+        <a href="/posts/"
+           >
+          posts
+        </a>
+      </li>
+      
+      <li>
+        <a href="/archive/"
+           >
+          archive
+        </a>
+      </li>
+      
+      <li>
+        <a href="/about/"
+           >
+          about
+        </a>
+      </li>
+      
+    </ul>
+    <button class="nav__toggle" id="theme-toggle" aria-label="toggle dark mode">○</button>
+  </div>
+</nav>
+
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  var root = document.documentElement;
+  var stored = localStorage.getItem('theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  function update() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    btn.textContent = dark ? '●' : '○';
+  }
+  update();
+  btn.addEventListener('click', function() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    update();
+  });
+})();
+</script>
+<main class="site-main">
+
+<article class="single-post">
+
+  <a class="single-post__back" href="http://localhost:1313/posts">← back</a>
+
+  <header class="single-post__header">
+    <h1 class="single-post__title">
+      
+        template: something about &#34;후현대주의 광장무&#34;
+      
+    </h1>
+    <div class="single-post__meta">
+      <span>フグ</span>
+      <span>2025-02-12</span>
+      
+        <span>Blog</span>
+      
+    </div>
+  </header>
+
+  <div class="post-body">
+    <pre tabindex="0"><code>---
+title: &#39;template: something about &#34;후현대주의 광장무&#34;&#39;
+date: 2025-02-12
+tags: [&#34;hugo&#34;, &#34;道德哲学&#34;]
+category: &#34;Blog&#34;
+author: &#34;フグ&#34;
+summary: &#34;街頭政治の生理的要因&#34;
+---
+</code></pre><p>it&rsquo;s the first slop;</p>
+<p>it&rsquo;s a template, may finish it later</p>
+<p>All fields optional except <code>date</code>.</p>
+<ul>
+<li>If <code>title</code> is absent → card shows <code>#memo</code></li>
+<li>If <code>summary</code> is absent → first ~120 chars of body used</li>
+</ul>
+<hr>
+<p>Place images in your <code>content/</code> folder next to the markdown file, or in <code>static/</code>.</p>
+<p>Then reference it in markdown:
+<code> ![alt text](photo.jpg)</code></p>
+<p><strong>From static folder:</strong></p>
+<p>Put the image in <code>static/img/photo.jpg</code>, then:
+<code>![alt text](/img/photo.jpg)</code></p>
+<p>or</p>
+<p><code>&lt;img src=&quot;/img/logo.jpg&quot; alt=&quot;logo&quot; width=&quot;200&quot;&gt;</code></p>
+
+  </div>
+
+  
+  <footer class="single-post__footer">
+    
+      <a class="tag" href="/tags/hugo/">hugo</a>
+    
+      <a class="tag" href="/tags/%E9%81%93%E5%BE%B7%E5%93%B2%E5%AD%A6/">道德哲学</a>
+    
+  </footer>
+  
+
+</article>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <span>2026</span>
+  </footer>
+
+</body>
+</html>

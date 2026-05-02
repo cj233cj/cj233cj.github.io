@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Random game thoughts: &#34;Ghost of Tsushima&#34; · Project Digitalsheep</title>
+
+  <meta name="description" content="short articles and memos" />
+
+  
+  <link rel="canonical" href="http://localhost:1313/posts/ghostoftsushima-/" />
+
+  
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+  
+</head>
+<body><nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__title" href="/">Project Digitalsheep</a>
+    <ul class="nav__links">
+      
+      <li>
+        <a href="/posts/"
+           >
+          posts
+        </a>
+      </li>
+      
+      <li>
+        <a href="/archive/"
+           >
+          archive
+        </a>
+      </li>
+      
+      <li>
+        <a href="/about/"
+           >
+          about
+        </a>
+      </li>
+      
+    </ul>
+    <button class="nav__toggle" id="theme-toggle" aria-label="toggle dark mode">○</button>
+  </div>
+</nav>
+
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  var root = document.documentElement;
+  var stored = localStorage.getItem('theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  function update() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    btn.textContent = dark ? '●' : '○';
+  }
+  update();
+  btn.addEventListener('click', function() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    update();
+  });
+})();
+</script>
+<main class="site-main">
+
+<article class="single-post">
+
+  <a class="single-post__back" href="http://localhost:1313/posts">← back</a>
+
+  <header class="single-post__header">
+    <h1 class="single-post__title">
+      
+        Random game thoughts: &#34;Ghost of Tsushima&#34;
+      
+    </h1>
+    <div class="single-post__meta">
+      <span>hugu</span>
+      <span>2026-04-23</span>
+      
+        <span>Blog</span>
+      
+    </div>
+  </header>
+
+  <div class="post-body">
+    <p>&lsquo;ghost of tsushima&rsquo; has some serious issues with target locking when playing with M&amp;K, but despite the pretty fucked up katana battle the game is very fun.</p>
+<p>last time i enjoyed an action game with intense cold weapon combat was &lsquo;assassin creed: origin&rsquo;, &lsquo;ghost of tsushima&rsquo; has a budget zelda-ish open world which is still much better and a very immersive lore/story if you don&rsquo;t care about the history details;</p>
+<p>the environment design is incredibly phenomenal, even in my potato PC;</p>
+<p>music is very good also;</p>
+<p>sucker punch really hate making visually attractive women, which is pretty racist and disrespectful tbf, that&rsquo;s the only disappointment.</p>
+<p>momiji higanbana ajisai, in the game weapons and armors are heavily connected with flora, resonating with &rsquo;the chrysanthemum and the sword&rsquo;.</p>
+<p><br><br><br><br><br><br></p>
+
+  </div>
+
+  
+  <footer class="single-post__footer">
+    
+      <a class="tag" href="/tags/game/">game</a>
+    
+      <a class="tag" href="/tags/bullshit/">bullshit</a>
+    
+  </footer>
+  
+
+</article>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <span>2026</span>
+  </footer>
+
+</body>
+</html>

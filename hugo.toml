@@ -1,0 +1,34 @@
+baseURL = "https://cj233cj.github.io/"
+locale = "en"
+title = "Project Digitalsheep"          
+theme = "memo"
+paginate = 200
+enableEmoji = true
+summarylength = 0   
+enableRobotsTXT = true
+
+[params]
+  author = "hugu"             
+  description = "short articles and memos"
+  showReadingTime = false
+  showToc = true
+
+[menu]
+  [[menu.main]]
+    name = "posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "archive"
+    url = "/archive/"
+    weight = 2
+  [[menu.main]]
+    name = "about"
+    url = "/about/"
+    weight = 3
+
+[markup]
+  [markup.highlight]
+    style = "github"
+  [markup.goldmark.renderer]
+    unsafe = true  

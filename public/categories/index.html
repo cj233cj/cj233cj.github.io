@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Categories · Project Digitalsheep</title>
+
+  <meta name="description" content="short articles and memos" />
+
+  
+  <link rel="canonical" href="http://localhost:1313/categories/" />
+
+  
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+  <link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/categories/index.xml" title="Project Digitalsheep" />
+</head>
+<body><nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__title" href="/">Project Digitalsheep</a>
+    <ul class="nav__links">
+      
+      <li>
+        <a href="/posts/"
+           >
+          posts
+        </a>
+      </li>
+      
+      <li>
+        <a href="/archive/"
+           >
+          archive
+        </a>
+      </li>
+      
+      <li>
+        <a href="/about/"
+           >
+          about
+        </a>
+      </li>
+      
+    </ul>
+    <button class="nav__toggle" id="theme-toggle" aria-label="toggle dark mode">○</button>
+  </div>
+</nav>
+
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  var root = document.documentElement;
+  var stored = localStorage.getItem('theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  function update() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    btn.textContent = dark ? '●' : '○';
+  }
+  update();
+  btn.addEventListener('click', function() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    update();
+  });
+})();
+</script>
+<main class="site-main">
+
+<div class="page-header">
+  <p class="page-header__title">Categories</p>
+</div>
+
+<ul class="post-list">
+  
+</ul>
+
+
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <span>2026</span>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale | default "en" }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>
+    {{- if .IsHome -}}
+      {{ .Site.Title }}
+    {{- else -}}
+      {{ with .Title }}{{ . }} · {{ end }}{{ .Site.Title }}
+    {{- end -}}
+  </title>
+
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+
+  <!-- RSS -->
+  {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}" />
+  {{- end }}
+</head>
+<body>
+
+  {{- partial "nav.html" . -}}
+
+  <main class="site-main">
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  <footer class="site-footer">
+    <span>{{ now.Year }}</span>
+  </footer>
+
+</body>
+</html>

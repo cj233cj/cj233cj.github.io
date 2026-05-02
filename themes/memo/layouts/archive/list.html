@@ -1,0 +1,80 @@
+{{ define "main" }}
+
+<div class="page-header">
+  <p class="page-header__title">archive</p>
+</div>
+
+{{ $pages := .Site.RegularPages.ByDate.Reverse }}
+
+{{/* collect unique years */}}
+{{ $years := slice }}
+{{ range $pages }}
+  {{ $y := .Date.Format "2006" }}
+  {{ if not (in $years $y) }}
+    {{ $years = $years | append $y }}
+  {{ end }}
+{{ end }}
+
+{{ range $years }}
+  {{ $year := . }}
+
+  {{/* count posts this year */}}
+  {{ $yearCount := 0 }}
+  {{ range $pages }}
+    {{ if eq (.Date.Format "2006") $year }}
+      {{ $yearCount = add $yearCount 1 }}
+    {{ end }}
+  {{ end }}
+
+  <div class="archive-year">
+    <div class="archive-year__heading">
+      <span>{{ $year }}</span>
+      <span class="archive-count">{{ $yearCount }}</span>
+    </div>
+
+    {{/* collect unique months this year */}}
+    {{ $months := slice }}
+    {{ range $pages }}
+      {{ if eq (.Date.Format "2006") $year }}
+        {{ $m := .Date.Format "January" }}
+        {{ if not (in $months $m) }}
+          {{ $months = $months | append $m }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ range $months }}
+      {{ $month := . }}
+
+      {{/* count posts this month */}}
+      {{ $monthCount := 0 }}
+      {{ range $pages }}
+        {{ if and (eq (.Date.Format "2006") $year) (eq (.Date.Format "January") $month) }}
+          {{ $monthCount = add $monthCount 1 }}
+        {{ end }}
+      {{ end }}
+
+      <div class="archive-month">
+        <div class="archive-month__heading">
+          <span>{{ $month }}</span>
+          <span class="archive-count">{{ $monthCount }}</span>
+        </div>
+
+        {{ range $pages }}
+          {{ if and (eq (.Date.Format "2006") $year) (eq (.Date.Format "January") $month) }}
+            <a class="archive-item" href="{{ .Permalink }}">
+              <span class="archive-item__title">
+                {{- if and .Title (ne .Title "#memo") -}}{{ .Title }}{{- else -}}#memo{{- end -}}
+              </span>
+              <span class="archive-item__meta">
+                {{ .Date.Format "January 2, 2006" }} · {{ .Params.author | default $.Site.Params.author }}
+              </span>
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
+
+{{ end }}

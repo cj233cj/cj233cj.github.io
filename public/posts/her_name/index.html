@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Her name · Project Digitalsheep</title>
+
+  <meta name="description" content="short articles and memos" />
+
+  
+  <link rel="canonical" href="http://localhost:1313/posts/her_name/" />
+
+  
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+  
+</head>
+<body><nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__title" href="/">Project Digitalsheep</a>
+    <ul class="nav__links">
+      
+      <li>
+        <a href="/posts/"
+           >
+          posts
+        </a>
+      </li>
+      
+      <li>
+        <a href="/archive/"
+           >
+          archive
+        </a>
+      </li>
+      
+      <li>
+        <a href="/about/"
+           >
+          about
+        </a>
+      </li>
+      
+    </ul>
+    <button class="nav__toggle" id="theme-toggle" aria-label="toggle dark mode">○</button>
+  </div>
+</nav>
+
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  var root = document.documentElement;
+  var stored = localStorage.getItem('theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  function update() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    btn.textContent = dark ? '●' : '○';
+  }
+  update();
+  btn.addEventListener('click', function() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    update();
+  });
+})();
+</script>
+<main class="site-main">
+
+<article class="single-post">
+
+  <a class="single-post__back" href="http://localhost:1313/posts">← back</a>
+
+  <header class="single-post__header">
+    <h1 class="single-post__title">
+      
+        Her name
+      
+    </h1>
+    <div class="single-post__meta">
+      <span>hugu</span>
+      <span>2025-12-23</span>
+      
+        <span>Blog</span>
+      
+    </div>
+  </header>
+
+  <div class="post-body">
+    <p>currently i am using <a href="https://stashapp.cc">stash</a> to manage my pornography collections.</p>
+<p>there are some quirky shit in this wonderful horny FOSS app, and here are some tweaks:</p>
+<ul>
+<li>no stable connection to many JAV db sites unless you set a local proxy in the &ldquo;config.yml&rdquo; manually when using it inside some authoritarian national firewall</li>
+<li>no autocreation of performers&rsquo; names, you have to create name columns for your ladies by your own hand</li>
+<li>anime db is lacking, likely</li>
+<li>DLNA is not working properly on my win PC idk may check it later</li>
+<li>not very consistent when playing videos in a clean and focus &rsquo;new tab'</li>
+<li>watching history is not fully recorded, or does it?</li>
+<li>playback quality in browser is significantly lower than when directly playing via MPE player</li>
+</ul>
+<p>anyway, the ladies now have names thanks to nyaa github aria2 python etc etc</p>
+<p><br><br><br><br><br><br></p>
+
+  </div>
+
+  
+  <footer class="single-post__footer">
+    
+      <a class="tag" href="/tags/tech/">tech</a>
+    
+      <a class="tag" href="/tags/selfhost/">selfhost</a>
+    
+  </footer>
+  
+
+</article>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <span>2026</span>
+  </footer>
+
+</body>
+</html>

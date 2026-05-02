@@ -1,0 +1,42 @@
+{{/* partial "post-card.html" — expects a Page context */}}
+{{ $hasTitle := and .Title (ne .Title "#memo") }}
+{{ $summary := "" }}
+{{ if .Params.summary }}
+  {{/* explicit summary in front matter — truncate if long */}}
+  {{ $summary = .Params.summary | truncate 80 }}
+{{ else }}
+  {{/* no front matter summary — use plain text body, truncated */}}
+  {{ $summary = .Plain | truncate 80 }}
+{{ end }}
+
+<li class="post-card">
+  <div class="post-card__header">
+    <span class="post-card__author">{{ .Params.author | default $.Site.Params.author }}</span>
+    <span class="post-card__date">{{ .Date.Format "2006-01-02 15:04" }}</span>
+  </div>
+
+  {{ if $hasTitle }}
+    <div class="post-card__title">
+      <a class="post-card__link" href="{{ .Permalink }}">{{ .Title }}</a>
+    </div>
+  {{ else }}
+    <div class="post-card__title post-card__title--memo">
+      <a class="post-card__link" href="{{ .Permalink }}">#memo</a>
+    </div>
+  {{ end }}
+
+  {{ if $summary }}
+    <div class="post-card__summary">{{ $summary }}</div>
+  {{ end }}
+
+  {{ if or .Params.tags .Params.category }}
+  <div class="post-card__tags">
+    {{ with .Params.category }}
+      <span class="post-card__category">{{ . }}</span>
+    {{ end }}
+    {{ range .Params.tags }}
+      <a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</li>

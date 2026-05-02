@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ $posts := .Site.GetPage "section" "posts" }}
+  {{ if $posts }}
+    <meta http-equiv="refresh" content="0; url={{ $posts.Permalink }}" />
+    <script>window.location.href = "{{ $posts.Permalink }}";</script>
+    <p style="font-family: monospace; padding: 32px; color: #657786;">
+      → <a href="{{ $posts.Permalink }}">posts</a>
+    </p>
+  {{ end }}
+{{ end }}

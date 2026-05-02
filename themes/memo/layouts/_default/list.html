@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<div class="page-header">
+  <p class="page-header__title">{{ .Title | default "posts" }}</p>
+</div>
+
+<ul class="post-list">
+  {{ range .Paginator.Pages }}
+    {{ partial "post-card.html" . }}
+  {{ end }}
+</ul>
+
+{{ partial "pagination.html" .Paginator }}
+
+{{ end }}
