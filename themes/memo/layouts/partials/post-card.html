@@ -2,17 +2,15 @@
 {{ $hasTitle := and .Title (ne .Title "#memo") }}
 {{ $summary := "" }}
 {{ if .Params.summary }}
-  {{/* explicit summary in front matter — truncate if long */}}
-  {{ $summary = .Params.summary | truncate 80 }}
+  {{ $summary = .Params.summary | truncate 480 }}
 {{ else }}
-  {{/* no front matter summary — use plain text body, truncated */}}
-  {{ $summary = .Plain | truncate 80 }}
+  {{ $summary = .Plain | htmlUnescape | truncate 480 }}
 {{ end }}
 
 <li class="post-card">
   <div class="post-card__header">
     <span class="post-card__author">{{ .Params.author | default $.Site.Params.author }}</span>
-    <span class="post-card__date">{{ .Date.Format "2006-01-02 15:04" }}</span>
+    <span class="post-card__date">{{ .Date.Format "2006-01-02" }}</span>
   </div>
 
   {{ if $hasTitle }}
