@@ -267,15 +267,20 @@ a {
   font-size: 0.78rem;
   font-weight: 300;
   color: var(--text-faint);
+  margin-bottom: 4px;
 }
 
 /* --- summary --- */
 .post-card__summary {
   font-size: 0.88rem;
-  color: var(--text-muted);
+  color: var(--text);
   line-height: 1.6;
   word-break: break-word;
   margin-bottom: 8px;
+}
+
+.post-card__summary--dim {
+  color: var(--text-muted);
 }
 
 /* --- tags row --- */
@@ -292,8 +297,9 @@ a {
   font-family: var(--font-mono);
   font-size: 0.65rem;
   font-weight: 400;
-  color: var(--tag-text);
-  background: var(--tag-bg);
+  color: var(--text-faint);
+  background: none;
+  border: 1px solid var(--border);
   padding: 2px 7px;
   border-radius: 2px;
   letter-spacing: 0.02em;
@@ -305,7 +311,7 @@ a {
 .post-card__category {
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  color: var(--text-faint);
+  color: var(--tag-text);
   border: 1px solid var(--border);
   padding: 2px 7px;
   border-radius: 2px;

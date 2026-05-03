@@ -17,13 +17,11 @@
     </div>
   {{ end }}
 
-  <div class="post-card__summary">
-    {{ if .Params.summary }}
-      {{ .Params.summary }}
-    {{ else }}
-      {{ .Summary }}
-    {{ end }}
-  </div>
+{{ if .Params.summary }}
+  <div class="post-card__summary post-card__summary--dim">{{ .Params.summary }}</div>
+{{ else }}
+  <div class="post-card__summary">{{ .Summary }}</div>
+{{ end }}
 
   {{ if or .Params.tags .Params.category }}
   <div class="post-card__tags">

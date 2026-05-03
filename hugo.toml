@@ -6,6 +6,7 @@ paginate = 200
 enableEmoji = true
 summarylength = 280   
 enableRobotsTXT = true
+buildFuture = true
 
 [params]
   author = "hugu"             
