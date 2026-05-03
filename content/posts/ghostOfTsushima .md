@@ -1,7 +1,7 @@
 ---
 title: 'Random game thoughts: "Ghost of Tsushima"'
 date: 2026-04-23
-tags: ["game", "bullshit", ]
+tags: ["game" ]
 category: "Blog"
 author: "hugu"
 summary: "it's good"
