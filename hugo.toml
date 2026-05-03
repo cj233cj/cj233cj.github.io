@@ -4,7 +4,7 @@ title = "Project Digitalsheep"
 theme = "memo"
 paginate = 200
 enableEmoji = true
-summarylength = 0   
+summarylength = 280   
 enableRobotsTXT = true
 
 [params]

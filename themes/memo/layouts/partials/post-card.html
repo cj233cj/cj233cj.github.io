@@ -1,11 +1,5 @@
 {{/* partial "post-card.html" — expects a Page context */}}
 {{ $hasTitle := and .Title (ne .Title "#memo") }}
-{{ $summary := "" }}
-{{ if .Params.summary }}
-  {{ $summary = .Params.summary | truncate 480 }}
-{{ else }}
-  {{ $summary = .Plain | htmlUnescape | truncate 480 }}
-{{ end }}
 
 <li class="post-card">
   <div class="post-card__header">
@@ -23,9 +17,13 @@
     </div>
   {{ end }}
 
-  {{ if $summary }}
-    <div class="post-card__summary">{{ $summary }}</div>
-  {{ end }}
+  <div class="post-card__summary">
+    {{ if .Params.summary }}
+      {{ .Params.summary }}
+    {{ else }}
+      {{ .Summary }}
+    {{ end }}
+  </div>
 
   {{ if or .Params.tags .Params.category }}
   <div class="post-card__tags">
