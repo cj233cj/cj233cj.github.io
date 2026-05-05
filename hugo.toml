@@ -2,11 +2,13 @@ baseURL = "https://cj233cj.github.io/"
 locale = "en"
 title = "Project Digitalsheep"          
 theme = "memo"
-paginate = 200
 enableEmoji = true
 summarylength = 280   
 enableRobotsTXT = true
 buildFuture = true
+
+[pagination]
+  pagerSize = 20
 
 [params]
   author = "hugu"             
