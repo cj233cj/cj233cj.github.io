@@ -10,10 +10,10 @@ summary: "  haHAhaHAHAHAhahahHAha  "
 ---
 
 
-The Riddler looks like young Bill Gates;
-The Penguin resembles Trump, especially the accent;
-Catwoman is half-blackwashed so she can casually say "fuck the white privilege" things;
-Gordon is blackwashed even more, which is almost a dead flag in a normal Hollywood action movie;
+The Riddler looks like young Bill Gates; <BR>
+The Penguin resembles Trump, especially the accent; <BR>
+Catwoman is half-blackwashed so she can casually say "fuck the white privilege" things; <BR>
+Gordon is blackwashed even more, which is almost a dead flag in a normal Hollywood action movie; <BR>
 It doesn't look intentional, and everyone just pretends that this is the new normal. 
 
 Fair enough, it was 2022.
