@@ -1,11 +1,11 @@
 
 ---
-title: 'random movie thoughts: "The Batman (2022)"'
+title: 'Random Movie Thoughts: "The Batman" (2022)'
 date: 2026-05-20
 tags: ["ACG", "pol"]
 category: "Blog"
 author: "hugu"
-summary: "haHAhaHAHAHAhahahHAha "
+summary: "  haHAhaHAHAHAhahahHAha  "
 
 ---
 
