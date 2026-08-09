@@ -1,0 +1,5 @@
+- posts > timeline
+- blogs separate 
+- remove tags and name on frontpage
+- fonts
+- old shit
