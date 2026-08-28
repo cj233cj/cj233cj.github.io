@@ -87,7 +87,7 @@ Images in post body are styled `max-width: 100%` and block-displayed automatical
 
 ```
 content/
-  posts/        ← markdown files (or page bundles with images)
+  timeline/     ← markdown files (or page bundles with images)
   archive/
     _index.md   ← empty, just needs to exist
   about/
@@ -106,7 +106,7 @@ layouts/
   partials/
     nav.html, post-card.html, pagination.html
   404.html
-  index.html    ← redirects to /posts/
+  index.html    ← redirects to /timeline/
 ```
 
 ---

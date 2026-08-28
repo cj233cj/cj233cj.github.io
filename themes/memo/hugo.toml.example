@@ -14,8 +14,8 @@ paginate = 20
 
 [menu]
   [[menu.main]]
-    name = "posts"
-    url = "/posts/"
+    name = "timeline"
+    url = "/timeline/"
     weight = 1
   [[menu.main]]
     name = "archive"
