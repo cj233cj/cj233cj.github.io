@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<div class="page-header">
+  <p class="page-header__title">articles</p>
+</div>
+
+{{ $articles := where .Site.RegularPages "Params.category" "eq" "Blog" }}
+{{ $articles = $articles.ByDate.Reverse }}
+
+{{ if $articles }}
+  {{ $paginator := .Paginate $articles }}
+
+  <ul class="post-list">
+    {{ range $paginator.Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </ul>
+
+  {{ partial "pagination.html" .Paginator }}
+{{ else }}
+  <p style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); padding: 32px 4px;">
+    no articles yet
+  </p>
+{{ end }}
+
+{{ end }}

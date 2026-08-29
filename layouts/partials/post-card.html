@@ -1,0 +1,26 @@
+{{/* partial "post-card.html" — expects a Page context */}}
+
+<li class="post-card">
+  <div class="post-card__header">
+    <span class="post-card__author">{{ .Params.author | default $.Site.Params.author }}</span>
+    <span class="post-card__date">{{ .Date.Format "2006-01-02" }}</span>
+  </div>
+
+  {{ if .Title }}
+  <div class="post-card__title">
+    <a class="post-card__link" href="{{ .Permalink }}">{{ .Title }}</a>
+  </div>
+  {{ end }}
+
+{{ if .Params.summary }}
+  <div class="post-card__summary post-card__summary--dim">{{ .Params.summary }}</div>
+{{ else }}
+  <div class="post-card__summary">{{ .Summary }}</div>
+{{ end }}
+
+  {{ with .Params.category }}
+  <div class="post-card__tags">
+    <span class="post-card__category">{{ . }}</span>
+  </div>
+  {{ end }}
+</li>

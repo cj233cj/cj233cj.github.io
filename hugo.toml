@@ -22,13 +22,17 @@ buildFuture = true
     url = "/timeline/"
     weight = 1
   [[menu.main]]
+    name = "articles"
+    url = "/articles/"
+    weight = 2
+  [[menu.main]]
     name = "archive"
     url = "/archive/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     name = "about"
     url = "/about/"
-    weight = 3
+    weight = 4
 
 [markup]
   [markup.highlight]
