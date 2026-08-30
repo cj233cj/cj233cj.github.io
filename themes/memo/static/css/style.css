@@ -5,24 +5,24 @@
 
 /* --- CSS Variables --- */
 :root {
-  --bg:           #ffffff;
-  --bg-card:      #f5f8fa;
-  --bg-card-hover:#e8f0f5;
-  --border:       #e1e8ed;
-  --border-soft:  #f0f4f7;
-  --text:         #14171a;
-  --text-muted:   #657786;
-  --text-faint:   #aab8c2;
-  --accent:       #1da1f2;
-  --accent-dim:   #0d8ecf;
-  --tag-bg:       #e8f5fe;
-  --tag-text:     #1a8cbf;
-  --nav-bg:       #ffffff;
-  --nav-border:   #e1e8ed;
+  --bg:           #f2e9d2;
+  --bg-card:      #faf4e3;
+  --bg-card-hover:#eee3c7;
+  --border:       #e0d3b0;
+  --border-soft:  #ede1c4;
+  --text:         #43351f;
+  --text-muted:   #83724d;
+  --text-faint:   #b2a37e;
+  --accent:       #a45b12;
+  --accent-dim:   #854a0c;
+  --tag-bg:       #eee0b9;
+  --tag-text:     #8a5c15;
+  --nav-bg:       #f2e9d2;
+  --nav-border:   #e0d3b0;
 
-  --font-body:    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
-  --font-mono:    ui-monospace, SFMono-Regular, 'SF Mono', 'Cascadia Code', Menlo, Consolas, 'Liberation Mono', monospace;
-  --font-ui:      ui-monospace, SFMono-Regular, 'SF Mono', 'Cascadia Code', Menlo, Consolas, 'Liberation Mono', monospace;
+  --font-body:    'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'Yu Mincho', 'YuMincho', 'Noto Serif CJK SC', 'Source Han Serif SC', 'SimSun', 'STSong', Georgia, serif;
+  --font-mono:    'Cascadia Mono', 'Cascadia Code', Consolas, Menlo, Monaco, monospace;
+  --font-ui:      system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans CJK SC', 'Yu Gothic UI', sans-serif;
 
   --radius:       4px;
   --card-pad:     16px 20px;

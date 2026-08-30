@@ -2,14 +2,15 @@
 
 <li class="post-card">
   <div class="post-card__header">
-    <span class="post-card__author">{{ .Params.author | default $.Site.Params.author }}</span>
     <span class="post-card__date">{{ .Date.Format "2006-01-02" }}</span>
   </div>
 
-  {{ if .Title }}
+  {{ if and .Title (ne .Title "#memo") }}
   <div class="post-card__title">
     <a class="post-card__link" href="{{ .Permalink }}">{{ .Title }}</a>
   </div>
+  {{ else }}
+  <a class="post-card__link" href="{{ .Permalink }}" style="position:absolute;inset:0;z-index:0;"></a>
   {{ end }}
 
 {{ if .Params.summary }}
