@@ -1,5 +1,10 @@
-- posts > timeline
-- blogs separate 
-- remove tags and name on frontpage
-- fonts
-- old shit
+- [x] posts > timeline
+- [x] blogs separate 
+- [x] remove tags and name on frontpage
+- [x] fonts
+- [ ] old shit more articles
+- [ ] update the readme and the theme readme
+- [ ] separate the theme things 
+- [ ] the py script and systemd etc
+- [ ] maybe a domain 
+- [ ]
