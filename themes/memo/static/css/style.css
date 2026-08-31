@@ -609,19 +609,44 @@ a {
    MOBILE
    ============================================================ */
 @media (max-width: 480px) {
-  :root { --max-width: 100%; }
+  :root {
+    --max-width: 100%;
+    --nav-height: auto;
+  }
 
-  .nav__inner { padding: 0 12px; }
+  html { font-size: 16px; }
+
+  .nav { height: auto; min-height: 44px; }
+
+  .nav__inner {
+    padding: 6px 10px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .nav__title { font-size: 0.72rem; }
+
+  .nav__links {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .nav__links a {
+    font-size: 0.68rem;
+    padding: 3px 6px;
+  }
+
+  .nav__toggle { display: none !important; }
+
   .site-main { padding: 0 0 48px; }
-  .site-footer { padding: 12px 12px 24px; }
+  .site-footer { padding: 12px 10px 24px; }
 
-  .post-card { padding: 13px 14px; }
+  .post-card { padding: 12px 12px; }
 
+  .single-post__header { padding: 16px 12px; }
+  .post-body { padding: 0 12px; }
+  .single-post__footer { padding: 12px 12px; }
+  .single-post__back { padding-left: 12px; }
 
-  .single-post__header { padding: 16px 14px; }
-  .post-body { padding: 0 14px; }
-  .single-post__footer { padding: 12px 14px; }
-  .single-post__back { padding-left: 14px; }
-
-  .page-header { padding: 16px 14px 8px; }
+  .page-header { padding: 16px 12px 8px; }
 }
