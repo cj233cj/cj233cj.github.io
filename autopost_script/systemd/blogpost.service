@@ -1,0 +1,16 @@
+[Unit]
+Description=Blog Post Publisher
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/opt/blogpost
+Environment="GITHUB_TOKEN=ghp_YOUR_TOKEN"
+Environment="GITHUB_REPO=username/yourrepo"
+Environment="BRANCH=main"
+Environment="POST_SECRET=change_this_secret"
+ExecStart=/opt/blogpost/venv/bin/gunicorn -w 1 -b 0.0.0.0:5000 blog_post:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
