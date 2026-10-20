@@ -10,7 +10,7 @@ This is a personal blog where the author put random thoughts that feel too long 
  
 Topics drift around — games, anime, manga, novels, *foreign* politics and whatever's been sitting in the mind. Sometimes a quick impression, sometimes a *critical* rant.
  
-The site is built with [Hugo](https://gohugo.io), and a minimal theme ["memo"](https://github.com/cj233cj/cj233cj.github.io/tree/master/themes/memo) which was vibe-coded with Claude (*Free Tier* btw). It looks clean and works fine.
+The site is built with [Hugo](https://gohugo.io), and a minimal theme ["memo"](https://github.com/cj233cj/cj233cj.github.io/tree/master/themes/memo) which was vibe-coded with Claude (*Free Tier* btw). It looks clean and works fine, the general process of posting and some technical details can be found at [this article](../timeline/how-this-blog-works).
  
 The author is not a native English speaker, so don't expect fancy words. And for one certain reason, the author does not speak Chinese here — unfortunately.
 
