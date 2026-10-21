@@ -1,5 +1,5 @@
 ---
-title: 'Her name'
+title: 'Her Name'
 date: 2025-12-23
 tags: ["tech", "selfhost", ]
 category: "Blog"
