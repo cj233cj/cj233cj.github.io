@@ -11,7 +11,7 @@ summary: "街頭政治の生理的要因"
 
 ```
 ---
-title: 'template: something about "후현대주의 광장무"'
+title: 'Template: something about "후현대주의 광장무"'
 date: 2025-02-12
 tags: ["hugo", "道德哲学"]
 category: "Blog"
