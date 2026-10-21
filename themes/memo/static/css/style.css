@@ -650,3 +650,11 @@ a {
 
   .page-header { padding: 16px 12px 8px; }
 }
+
+
+:root {
+  --font-body: system-ui, -apple-system, "Segoe UI", "Noto Sans CJK SC", "Yu Gothic UI", sans-serif;
+  --font-ui: system-ui, -apple-system, "Segoe UI", "Noto Sans CJK SC", "Yu Gothic UI", sans-serif;
+  --font-mono: "Cascadia Mono", Consolas, monospace;
+}
+.nav__title, .nav__links a, .nav__toggle, .page-header__title, .post-card__author, .post-card__date, .post-card__title--memo, .post-card__tags, .post-card__category, .pagination, .single-post__meta, .single-post__back, .archive-year__heading, .archive-month__heading, .archive-count, .archive-item__meta, .site-footer { font-family: var(--font-ui); }
